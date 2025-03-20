@@ -1,5 +1,18 @@
 # JAVA 메서드
 
+### I/O
+```java
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+//psvm 옆에 throws IOException 추가
+BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+StringTokenizer st;
+st=new StringTokenizer(br.readLine());
+n=Integer.parseInt(st.nextToken());
+
+```
+
 ### StringBuilder
 append(string s) : 문자열을 끝에 추가  
 indexOf(string s) : 문자열의 처음 위치 반환  
