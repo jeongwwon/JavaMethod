@@ -37,6 +37,6 @@ peek() : 맨 위 요소를 확인
 Deque<Integer>dq=new ArrayDeque<>();
 ```
 addFirst(E e) : 덱 앞에 요소 추가  
-addLast(E e) : 덱 뒤에 요소 추가
-pollFirst() : 맨 앞 요소 제거하고 반환
-pollLast() : 맨 뒤 요소 제거하고 반환  
+addLast(E e) : 덱 뒤에 요소 추가  
+pollFirst() : 맨 앞 요소 제거하고 반환  
+pollLast() : 맨 뒤 요소 제거하고 반환    
