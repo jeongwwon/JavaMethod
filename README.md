@@ -24,6 +24,16 @@ insert(int offset,string s) : 지정된 위치에 문자열 삽입
 add(E e) : 리스트 끝에 요소 추가  
 get(int index) : 해당 인덱스의 요소 반환  
 remove(int index) : 특정 인덱스의 요소 삭제  
+정렬 람다식
+```java
+list.sort((t1,t2)->{
+            int val=Long.compare(t2.count,t1.count);
+            if(val!=0){
+                return val;
+            }
+            return Long.compare(t1.order,t2.order);
+});
+```
 
 ### Map<K,V>
 put(K key, V value) : 새로운 키-값 추가  
