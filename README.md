@@ -25,13 +25,17 @@ add(E e) : 리스트 끝에 요소 추가
 get(int index) : 해당 인덱스의 요소 반환  
 remove(int index) : 특정 인덱스의 요소 삭제  
 
-### Queue
+### Map<K,V>
+put(K key, V value) : 새로운 키-값 추가  
+get(K key) : 키에 해당하는 값 반환  
+getOrDefault(K key, V defaultValue) : 키가 없으면 기본값 반환  
+containsKey(K key) : 값이 존재하는지 확인
+remove(K key) : 해당 키 삭제
 ```java
-Queue<Integer>q=new LinkedList<>();
+for(Map.Entry<Integer,Integer>temp:mp.entrySet()){
+  temp.getKey(),temp.getValue()
+}
 ```
-offer() : 큐의 끝에 요소 추가  
-poll() : 맨 앞 요소 제거하고 반환  
-peek() : 맨 앞 요소를 반환 (제거 X)  
 
 ### AbstractMap.SimpleEntry<K,V>
 ```java
@@ -39,6 +43,14 @@ AbstractMap.SimpleEntry<Integer,Integer>mp=new AbstractMap.SimpleEntry<>(1,2);
 ```
 getKey() : 키 반환  
 getValue() : 값 반환  
+
+### Queue
+```java
+Queue<Integer>q=new LinkedList<>();
+```
+offer() : 큐의 끝에 요소 추가  
+poll() : 맨 앞 요소 제거하고 반환  
+peek() : 맨 앞 요소를 반환 (제거 X)  
 
 ### Stack
 push(E e) : 스택의 맨 위에 요소 추가  
