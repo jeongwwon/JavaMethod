@@ -16,6 +16,7 @@ n=Integer.parseInt(st.nextToken());
 ### StringBuilder
 append(string s) : 문자열을 끝에 추가  
 indexOf(string s) : 문자열의 처음 위치 반환  
+delete(int start,int end) : 범위 삭제  
 deleteCharAt(int index) : 해당 원소 삭제  
 reverse() : 문자열을 뒤집음  
 size() : 길이 반환  
