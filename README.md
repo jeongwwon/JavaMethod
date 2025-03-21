@@ -26,8 +26,8 @@ insert(int offset,string s) : 지정된 위치에 문자열 삽입
 add(E e) : 리스트 끝에 요소 추가  
 get(int index) : 해당 인덱스의 요소 반환  
 remove(int index) : 특정 인덱스의 요소 삭제  
-정렬 람다식
 ```java
+//정렬 람다식
 list.sort((t1,t2)->{
             int val=Long.compare(t2.count,t1.count);
             if(val!=0){
@@ -77,3 +77,13 @@ addFirst(E e) : 덱 앞에 요소 추가
 addLast(E e) : 덱 뒤에 요소 추가  
 pollFirst() : 맨 앞 요소 제거하고 반환  
 pollLast() : 맨 뒤 요소 제거하고 반환    
+
+### PriorityQueue
+```java
+static PriorityQueue<AbstractMap.SimpleEntry<Integer,Integer>>pq=new PriorityQueue<>((t1,t2)->{
+        return Integer.compare(t1.getValue(),t2.getValue());
+    }); // 맨위에 오는 Element는 기본 정렬과 같음
+```
+offer(E e) : 큐에 요소를 추가  
+peek() : 가장위에 있는 요소를 확인(반환x)  
+poll() : 가장위의 있는 요소를 반환  
