@@ -13,9 +13,9 @@ n=Integer.parseInt(st.nextToken());
 
 ```
 ### Character
-isLetter(Character ch) : 문자인지 아닌지 true,false 반환
-isUpperCase(Character ch) : 대문자인지 아닌지 ""
-isLowerCase(Character ch) : 소문자인지 아닌지 ""
+isLetter(Character ch) : 문자인지 아닌지 true,false 반환  
+isUpperCase(Character ch) : 대문자인지 아닌지 ""  
+isLowerCase(Character ch) : 소문자인지 아닌지 ""  
   
 ### StringBuilder
 append(string s) : 문자열을 끝에 추가  
