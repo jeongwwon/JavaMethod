@@ -51,9 +51,18 @@ list.sort((t1,t2)->{
 put(K key, V value) : 새로운 키-값 추가  
 get(K key) : 키에 해당하는 값 반환  
 getOrDefault(K key, V defaultValue) : 키가 없으면 기본값 반환  
+computeIfAbsent(K key,V value) : 키에 대한 초기화에 유용, 메서드 체이닝으로 동작하거나 동작하지 않음  
+putIfAbsent(K key,V value) : 해당 키가 없으면 value 추가  
 containsKey(K key) : 값이 존재하는지 확인  
 remove(K key) : 해당 키 삭제  
 ```java
+//키
+for(int there:mp.keySet()){
+}
+//값
+for(int there:mp.values()){
+}
+//키,값 엔트리 셋
 for(Map.Entry<Integer,Integer>temp:mp.entrySet()){
   temp.getKey(),temp.getValue()
 }
