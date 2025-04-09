@@ -68,14 +68,6 @@ for(Map.Entry<Integer,Integer>temp:mp.entrySet()){
   temp.getKey(),temp.getValue()
 }
 ```
-
-### AbstractMap.SimpleEntry<K,V>
-```java
-AbstractMap.SimpleEntry<Integer,Integer>mp=new AbstractMap.SimpleEntry<>(1,2);
-```
-getKey() : 키 반환  
-getValue() : 값 반환  
-
 ### Queue
 ```java
 Queue<Integer>q=new LinkedList<>();
