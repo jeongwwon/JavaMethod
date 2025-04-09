@@ -22,6 +22,7 @@ charAt(int index) : 해당 인덱스의 문자를 반환
 substring(int start,int end) : 시작~끝-1 까지 문자열을 반환  
 startsWith(String s) : 처음부터 s와 매칭하여 맞는지 boolean 반환  
 endsWith(String s) : 마지막 부분 s와 매칭하여 맞는지 boolean 반환  
+contains(String s) : 해당 문자열을 포함하는지 안하는지 boolean 반환  
   
 ### StringBuilder
 append(string s) : 문자열을 끝에 추가  
