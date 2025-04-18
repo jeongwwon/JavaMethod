@@ -18,6 +18,8 @@ isUpperCase(Character ch) : 대문자인지 아닌지 ""
 isLowerCase(Character ch) : 소문자인지 아닌지 ""  
 
 ### String
+isEmpty() : 비어있는지 확인  
+isBlank() : 공백 포함 비어있는지 확인   
 charAt(int index) : 해당 인덱스의 문자를 반환  
 substring(int start,int end) : 시작~끝-1 까지 문자열을 반환  
 startsWith(String s) : 처음부터 s와 매칭하여 맞는지 boolean 반환  
@@ -25,6 +27,7 @@ endsWith(String s) : 마지막 부분 s와 매칭하여 맞는지 boolean 반환
 contains(String s) : 해당 문자열을 포함하는지 안하는지 boolean 반환  
   
 ### StringBuilder
+length() : 길이 확인  
 append(string s) : 문자열을 끝에 추가  
 indexOf(string s) : 문자열의 처음 위치 반환 #없으면 -1 반환  
 delete(int start,int end) : 범위 삭제  
@@ -77,6 +80,7 @@ poll() : 맨 앞 요소 제거하고 반환
 peek() : 맨 앞 요소를 반환 (제거 X)  
 
 ### Stack
+get(int index) : 지정된 인덱스의 요소 반환  
 push(E e) : 스택의 맨 위에 요소 추가  
 pop() : 맨 위 요소 제거 및 반환  
 peek() : 맨 위 요소를 확인  
